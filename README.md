@@ -53,4 +53,4 @@ CommandToWrite | userscount | mostlinks | mostmentions | mostactive | mostgrumpy
 
 Question #     | Question 1 | Question 2 | Question 3 | Question 4 | Question 5a | Question 5b
 -------------- | ---------- | ---------- | ---------- | ----------- | ---------- | --------------
-Route to use   | http://<ip>:9191/usercount | http://<ip>:9191/mostlinks | http://<ip>:9191/mentioned | http://<ip>:9191/mostactive | http://<ip>:9191/mostgrumpy | http://<ip>:9191/mosthappy
+Route to use   | http://ip:9191/usercount | http://ip:9191/mostlinks | http://ip:9191/mentioned | http://ip:9191/mostactive | http://ip:9191/mostgrumpy | http://ip:9191/mosthappy
