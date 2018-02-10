@@ -1,4 +1,9 @@
+
 echo "Initializing AutoSetup"
+echo "Installing essentials"
+sudo apt-get update
+sudo apt-get install -y wget
+sudo apt-get install -y git-all
 echo "Installing Docker! & Docker-compose"
 wget -O - https://bit.ly/docker-install | bash
 echo "--------------------------------------"
