@@ -20,5 +20,5 @@ echo "--------------------------------------"
 echo "----------Starting up MongoDB---------"
 echo "--------------------------------------"
 echo "--------------------------------------"
-docker run --rm -v $(pwd)/DBEX2-DFH/SetupDBEX2.sh:/ --publish=27017:27017 --name dbms -d mongo
-docker exec dbms sh -c './SetupDBEX2.sh'
+sudo docker run --rm -v $(pwd)/DBEX2-DFH/SetupDBEX2.sh:/ --publish=27017:27017 --name dbms -d mongo
+sudo docker exec dbms sh -c './SetupDBEX2.sh'
