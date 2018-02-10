@@ -14,12 +14,12 @@ The result is a One-line script setup, that be run on a linux machine. It will s
 
 -----------
 
-## How to run it!
-##### Pre-requisite
+## How to run!
+### Pre-requisite
 - Have a running debian distribution. (Ubuntu 16 or < is recommended)
 >- If you do not have access to a linux. Follow this [guide](https://github.com/datsoftlyngby/soft2018spring-databases-teaching-material) to get familiar with vagrant. A vagrantfile is provided at [link], it is in the repository aswell.
 
-##### Setup
+### Setup
 To setup this exercise. simply be in the shell linux terminal, and put in this command.
 **__RECOMMENDED__**
 ```
@@ -31,5 +31,40 @@ wget -O - https://raw.githubusercontent.com/Games-of-Threads/DBEX2-DFH/master/Ex
 ```
 This will setup the database and application. It can take a minute or two. (Longer if slow computer).
 
-##### How to Use.
-The 
+### How to Use.
+The golang application has 2 interfaces. A command line interface, and a API endpoint. So it is up to you how you prefer to interact with systems. When the setup is done. It will display likely IP's you will need to go to, to access it's API Endpoint. It will also display the command to attach into the container to use the command line interface. which is:
+```
+docker attach GoApp
+```
+Both CLI and API will point to either commands or routes for picking a questions to be answered.
+
+##### CLI Commands
+- question 1
+```
+userscount
+```
+- question 2
+```
+mostlinks
+```
+- question 3
+```
+mostmentions
+```
+- question 4
+```
+mostactive
+```
+- question 5a
+```
+mostgrumpy
+```
+- question 5b
+```
+mosthappy
+```
+- exiting gracefully
+```
+exit
+```
+
