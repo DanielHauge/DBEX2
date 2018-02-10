@@ -19,6 +19,8 @@ The result is a One-line script setup, that be run on a linux machine. It will s
 - Have a running debian distribution. (Ubuntu 16 or < is recommended)
 >- If you do not have access to a linux. Follow this [guide](https://github.com/datsoftlyngby/soft2018spring-databases-teaching-material) to get familiar with vagrant. A vagrantfile is provided at [link], it is in the repository aswell.
 
+-------------
+
 ### Setup
 To setup this exercise. simply be in the shell linux terminal, and put in this command. Note: It will install latest version of: Docker, Docker compose, wget and git.
 **__RECOMMENDED__**
@@ -30,6 +32,9 @@ If you believe, you allready have the newest docker, docker-compose, wget, git v
 wget -O - https://raw.githubusercontent.com/Games-of-Threads/DBEX2-DFH/master/ExpressSetup.sh | bash
 ```
 This will setup the database and application. It can take a minute or two. (Longer if slow computer).
+
+------------------------
+------------------------
 
 ### How to Use.
 The golang application has 2 interfaces. A command line interface, and a API endpoint. So it is up to you how you prefer to interact with systems. When the setup is done. It will display likely IP's you will need to go to, to access it's API Endpoint. It will also display the command to attach into the container to use the command line interface. which is:
@@ -43,14 +48,101 @@ sudo docker run --rm -it --link dbms:mongo --publish=9191:9191 --name GoApp dbex
 
 Both CLI and API will point to either commands or routes for picking a questions to be answered.
 
+---------------------
+
 ##### CLI Commands
 
 Question #     | Question 1 | Question 2 | Question 3 | Question 4 | Question 5a | Question 5b
 -------------- | ---------- | ---------- | ---------- | ----------- | ---------- | --------------
 CommandToWrite | userscount | mostlinks | mostmentions | mostactive | mostgrumpy | mosthappy
 
+---------------------
+
 ##### API Routes
 
 Question #     | Question 1 | Question 2 | Question 3 | Question 4 | Question 5a | Question 5b
 -------------- | ---------- | ---------- | ---------- | ----------- | ---------- | --------------
 Route to use   | http://ip:9191/usercount | http://ip:9191/mostlinks | http://ip:9191/mentioned | http://ip:9191/mostactive | http://ip:9191/mostgrumpy | http://ip:9191/mosthappy
+
+---------------------
+---------------------
+
+### Expected answers
+
+##### Question 1.
+Expected result: 659621
+
+Note: However, Robo 3T with the same exact quiry document. Will bring this result: **659774**.
+
+This is most likely due to a difference in how each (golang library driver and robo) handle distinction.
+
+##### Question 2.
+Expected result: 
+
+```
+Name: lost_dog - Value: 549
+Name: tweetpet - Value: 310
+Name: VioletsCRUK - Value: 251
+Name: what_bugs_u - Value: 246
+Name: tsarnick - Value: 245
+Name: SallytheShizzle - Value: 229
+Name: mcraddictal - Value: 217
+Name: Karen230683 - Value: 216
+Name: keza34 - Value: 211
+```
+
+##### Question 3. 
+Expected result:
+
+```
+Name: @mileycyrus - Value: 3770
+Name: @tommcfly - Value: 3614
+Name: @ddlovato - Value: 2903
+Name: I - Value: 2618
+Name: @DavidArchie - Value: 1089
+Name: @Jonasbrothers - Value: 1063
+Name: @DonnieWahlberg - Value: 1017
+Name: @jordanknight - Value: 1005
+Name: i - Value: 978
+```
+
+##### Question 4.
+Expected result:
+```
+Name: lost_dog - Value: 549
+Name: webwoke - Value: 345
+Name: tweetpet - Value: 310
+Name: SallytheShizzle - Value: 281
+Name: VioletsCRUK - Value: 279
+Name: mcraddictal - Value: 276
+Name: tsarnick - Value: 248
+Name: what_bugs_u - Value: 246
+Name: Karen230683 - Value: 238
+```
+
+##### Question 5.
+Expected results.
+- A: Grumpy
+```
+Name: stephyway - Value: 0
+Name: bobzipp - Value: 0
+Name: tattoodancer35 - Value: 0
+Name: paligurl93 - Value: 0
+Name: adbillingsley - Value: 0
+Name: sdancingsteph - Value: 0
+Name: bpbabe - Value: 0
+Name: RobFoxKerr - Value: 0
+```
+- B: Happy
+```
+Name: stephyway - Value: 4
+Name: bobzipp - Value: 4
+Name: tattoodancer35 - Value: 4
+Name: paligurl93 - Value: 4
+Name: adbillingsley - Value: 4
+Name: sdancingsteph - Value: 4
+Name: bpbabe - Value: 4
+Name: RobFoxKerr - Value: 4
+```
+
+
