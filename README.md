@@ -40,7 +40,7 @@ Both CLI and API will point to either commands or routes for picking a questions
 
 ##### CLI Commands
 
-Question # | Question 1 | Question 2 | Question 3 | Question 4 | Question 5a | Question 5b
----------- | ---------- | ---------- | ---------- | ----------- | --------
+Question #     | Question 1 | Question 2 | Question 3 | Question 4 | Question 5a | Question 5b
+-------------- | ---------- | ---------- | ---------- | ----------- | --------
 CommandToWrite | userscount | mostlinks | mostmentions | mostactive | mostgrumpy | mosthappy
 
