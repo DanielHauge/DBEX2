@@ -18,5 +18,41 @@ var routes = Routes{
 		"/",
 		Index,
 	},
+	Route{
+		"User Count",
+		"GET",
+		"/usercount",
+		APIusercount,
+	},
+	Route{
+		"Most Links",
+		"GET",
+		"/mostlinks",
+		APImostlinks,
+	},
+	Route{
+		"Most Mentions",
+		"GET",
+		"/mentioned",
+		APImentioned,
+	},
+	Route{
+		"Most Active",
+		"GET",
+		"/mostactive",
+		APImostactive,
+	},
+	Route{
+		"Most Grumpy",
+		"GET",
+		"/mostgrumpy",
+		APImostgrumpy,
+	},
+	Route{
+		"Most Happy",
+		"GET",
+		"/mosthappy",
+		APImosthappy,
+	},
 
 }
