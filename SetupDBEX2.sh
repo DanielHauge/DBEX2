@@ -33,7 +33,8 @@ echo "----------Initializing Data to DB-----"
 echo "--------------------------------------"
 echo "--------------------------------------"
 sleep 3s
-sudo docker exec dbms sh -c 'chmod +x ImportData.sh | ./ImportData.sh'
+sudo docker exec dbms sh -c 'chmod +x ImportData.sh'
+sudo docker exec dbms sh -c './ImportData.sh'
 echo "--------------------------------------"
 echo "--------------------------------------"
 echo "----------Starting Application--------"
