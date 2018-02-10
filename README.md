@@ -17,8 +17,8 @@ The result is a One-line script setup, that be run on a linux machine. It will s
 ## How to run!
 ### Pre-requisite
 - Have a running debian distribution. (Ubuntu 16 or < is recommended)
->- If you do not have access to a linux. Follow this [guide](https://github.com/datsoftlyngby/soft2018spring-databases-teaching-material) to get familiar with vagrant. A vagrantfile is provided at [link], it is in the repository aswell.
-
+>- If you do not have access to a linux. Follow this [guide](https://github.com/datsoftlyngby/soft2018spring-databases-teaching-material)
+- (**OPTIONAL BUT RECOMMENDED**): Use the VM (vagrantfile) in this repository. A vagrantfile is provided at [link](https://raw.githubusercontent.com/Games-of-Threads/DBEX2-DFH/master/Vagrantfile). If using this vagrantfile. It has private network, so you can access stuff from inside at port 192.168.33.10. If IP allready taken on hostmachine, you can change the IP in the vagrantfile.
 -------------
 
 ### Setup
@@ -63,6 +63,8 @@ CommandToWrite | userscount | mostlinks | mostmentions | mostactive | mostgrumpy
 Question #     | Question 1 | Question 2 | Question 3 | Question 4 | Question 5a | Question 5b
 -------------- | ---------- | ---------- | ---------- | ----------- | ---------- | --------------
 Route to use   | http://ip:9191/usercount | http://ip:9191/mostlinks | http://ip:9191/mentioned | http://ip:9191/mostactive | http://ip:9191/mostgrumpy | http://ip:9191/mosthappy
+
+Note: If using the vagrantfile provided. the IP will be: 192.168.33.10:9191/route
 
 ---------------------
 ---------------------
