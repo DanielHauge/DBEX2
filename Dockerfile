@@ -2,7 +2,7 @@ FROM golang:jessie
 
 
 RUN go get gopkg.in/mgo.v2
-RUN go get “github.com/gorilla/mux”
+RUN go get github.com/gorilla/mux
 RUN go get github.com/rs/cors
 RUN go get -u gopkg.in/russross/blackfriday.v2
 RUN go get github.com/shurcooL/github_flavored_markdown
