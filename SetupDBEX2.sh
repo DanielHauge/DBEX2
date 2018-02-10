@@ -41,4 +41,15 @@ echo "----------Starting Application--------"
 echo "--------------------------------------"
 echo "--------------------------------------"
 sleep 3s
-sudo docker run --rm -it --link dbms:mongo --publish=9191:9191 --name GoApp dbex2:dfh
+sudo docker run --rm -dit --link dbms:mongo --publish=9191:9191 --name GoApp dbex2:dfh
+echo "--------------------------------------"
+echo "--------------------------------------"
+echo "----------Application Started---------"
+echo "--------------------------------------"
+echo "--------------------------------------"
+echo "You can now attach to the container with: docker attach GoApp"
+echo "Or use the API endpoint by curling using browser on this machines IP. REMEMBER PORT 9191.
+echo "echo "http://<ip>:9191/""
+echo "a likely IP will be one of the following below"
+hostname -I
+
