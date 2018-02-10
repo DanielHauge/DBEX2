@@ -20,5 +20,5 @@ echo "--------------------------------------"
 echo "----------Starting up MongoDB---------"
 echo "--------------------------------------"
 echo "--------------------------------------"
-sudo docker run --rm -v $(pwd)/DBEX2-DFH/ImportData.sh:/ --publish=27017:27017 --name dbms -d mongo
+sudo docker run --rm -v $(pwd)/DBEX2-DFH/ImportData.sh:/Importscript/ --publish=27017:27017 --name dbms -d mongo
 sudo docker exec dbms sh -c './ImportData.sh'
