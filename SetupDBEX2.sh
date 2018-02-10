@@ -47,9 +47,11 @@ echo "--------------------------------------"
 echo "----------Application Started---------"
 echo "--------------------------------------"
 echo "--------------------------------------"
-echo "You can now attach to the container with: docker attach GoApp"
-echo "Or use the API endpoint by curling using browser on this machines IP. REMEMBER PORT 9191.
-echo "echo "http://<ip>:9191/""
-echo "a likely IP will be one of the following below"
+cat <<"EOF"
+You can now attach to the container with: docker attach GoApp
+Or use the API endpoint by curling using browser on this machines IP. REMEMBER PORT 9191.
+http://<ip>:9191/
+a likely IP will be one of the following below
+EOF
 hostname -I
 
