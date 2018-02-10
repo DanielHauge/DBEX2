@@ -20,7 +20,7 @@ The result is a One-line script setup, that be run on a linux machine. It will s
 >- If you do not have access to a linux. Follow this [guide](https://github.com/datsoftlyngby/soft2018spring-databases-teaching-material) to get familiar with vagrant. A vagrantfile is provided at [link], it is in the repository aswell.
 
 ### Setup
-To setup this exercise. simply be in the shell linux terminal, and put in this command.
+To setup this exercise. simply be in the shell linux terminal, and put in this command. Note: It will install latest version of: Docker, Docker compose, wget and git.
 **__RECOMMENDED__**
 ```
 wget -O - https://raw.githubusercontent.com/Games-of-Threads/DBEX2-DFH/master/SetupDBEX2.sh | bash
@@ -36,6 +36,11 @@ The golang application has 2 interfaces. A command line interface, and a API end
 ```
 docker attach GoApp
 ```
+Note: If you attach to the container and leave it without correct escaping (CTRL+P -> CTRL-Q). The container will be deleted. You can run another run with the following command if this were to happen, and you need to get one up again without needing to run the entire setup again.
+```
+sudo docker run --rm -it --link dbms:mongo --publish=9191:9191 --name GoApp dbex2:dfh
+```
+
 Both CLI and API will point to either commands or routes for picking a questions to be answered.
 
 ##### CLI Commands
@@ -44,3 +49,8 @@ Question #     | Question 1 | Question 2 | Question 3 | Question 4 | Question 5a
 -------------- | ---------- | ---------- | ---------- | ----------- | ---------- | --------------
 CommandToWrite | userscount | mostlinks | mostmentions | mostactive | mostgrumpy | mosthappy
 
+##### API Routes
+
+Question #     | Question 1 | Question 2 | Question 3 | Question 4 | Question 5a | Question 5b
+-------------- | ---------- | ---------- | ---------- | ----------- | ---------- | --------------
+Route to use   | http://<ip>:9191/usercount | http://<ip>:9191/mostlinks | http://<ip>:9191/mentioned | http://<ip>:9191/mostactive | http://<ip>:9191/mostgrumpy | http://<ip>:9191/mosthappy
