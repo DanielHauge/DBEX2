@@ -24,7 +24,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 
 	var buffer bytes.Buffer
 	buffer.WriteString("# Database Excersise 2!\n")
-	buffer.WriteString("Document oriented Databases [Feat. MongoDB]. Link To project description here: [Link](https://github.com/datsoftlyngby/soft2018spring-databases-teaching-material/blob/master/lecture_notes/02-Intro_to_MongoDB.ipynb). Link to github: [Here](https://github.com/Games-of-Threads/DBEX2-DFH)\n\n")
+	buffer.WriteString("Document oriented Databases [Feat. MongoDB]. Link To project description here: [Link](https://github.com/datsoftlyngby/soft2018spring-databases-teaching-material/blob/master/lecture_notes/02-Intro_to_MongoDB.ipynb). Link to github: [Here](https://github.com/Games-of-Threads/DBEX2-DFH)\n\n## IMPORTANT! LINKS WILL NOT WORK IF NOT ACCESING FROM OUTSIDE.\n EA. If you are using private networking or portforwarding from a virtual machine. Links might not work. Just add the route to the adress")
 	buffer.WriteString("## Routes!\n\n")
 	buffer.WriteString("#### Question 1: \n")
 	buffer.WriteString("- How many unique users is there?\n\n")
