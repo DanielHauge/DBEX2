@@ -15,3 +15,21 @@ The result is a One-line script setup, that be run on a linux machine. It will s
 -----------
 
 ## How to run it!
+##### Pre-requisite
+- Have a running debian distribution. (Ubuntu 16 or < is recommended)
+>- If you do not have access to a linux. Follow this [guide](https://github.com/datsoftlyngby/soft2018spring-databases-teaching-material) to get familiar with vagrant. A vagrantfile is provided at [link], it is in the repository aswell.
+
+##### Setup
+To setup this exercise. simply be in the shell linux terminal, and put in this command.
+**__RECOMMENDED__**
+```
+wget -O - https://raw.githubusercontent.com/Games-of-Threads/DBEX2-DFH/master/SetupDBEX2.sh | bash
+```
+If you believe, you allready have the newest docker, docker-compose, wget, git version installed. You can also use the express script instead.
+```
+wget -O - https://raw.githubusercontent.com/Games-of-Threads/DBEX2-DFH/master/ExpressSetup.sh | bash
+```
+This will setup the database and application. It can take a minute or two. (Longer if slow computer).
+
+##### How to Use.
+The 
