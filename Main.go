@@ -19,7 +19,7 @@ import (
 func main() {
 
 
-	log.Println("GoApplication!, you can now go to "+GetMyIP()+":9191 and interact from there or type in one of the CLI commands here")
+	log.Println("GoApplication READY!!! you can now go to "+getMyIP()+":9191 and interact from there or type in one of the CLI commands here")
 	/*
 	//println(UserCount())
 	//test := MostLinks()
