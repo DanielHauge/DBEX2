@@ -7,7 +7,7 @@ import (
 )
 
 var(
-	_url string = "192.168.99.100"
+	_url string = "dbms"
 	_database string = "social_net"
 	_collection string = "tweets"
 )
