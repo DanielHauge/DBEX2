@@ -39,32 +39,8 @@ docker attach GoApp
 Both CLI and API will point to either commands or routes for picking a questions to be answered.
 
 ##### CLI Commands
-- question 1
-```
-userscount
-```
-- question 2
-```
-mostlinks
-```
-- question 3
-```
-mostmentions
-```
-- question 4
-```
-mostactive
-```
-- question 5a
-```
-mostgrumpy
-```
-- question 5b
-```
-mosthappy
-```
-- exiting gracefully
-```
-exit
-```
+
+Question 1 | Question 2 | Question 3 | Question 4 | Question 5a | Question 5b
+---------- | ---------- | ---------- | ---------- | ----------- | --------
+userscount | mostlinks | mostmentions | mostactive | mostgrumpy | mosthappy
 
