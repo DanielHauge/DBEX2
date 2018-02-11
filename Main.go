@@ -42,9 +42,6 @@ func main() {
 	router := NewRouter()
 	log.Fatal(http.ListenAndServe(":9191", router))
 
-
-
-
 }
 
 func ForLoopPrint(array []UserStats){
@@ -65,6 +62,7 @@ func RunCLI(){
 
 		input, _ := CLI.ReadString('\n')
 		command := strings.Fields(input)
+		if len(command)!=0{
 
 		switch command[0] {
 		case "userscount":
@@ -91,7 +89,10 @@ func RunCLI(){
 			println("Did not recognize the command.")
 			fmt.Print("\nEnter Command. \nAvailable Commands: \n userscount     mostlinks         mentioned          mostmactive         mostgrumpy      mosthappy      exit\n")
 		}
-
+		}else {
+			println("Did not recognize the command."
+			fmt.Print("\nEnter Command. \nAvailable Commands: \n userscount     mostlinks         mentioned          mostmactive         mostgrumpy      mosthappy      exit\n")
+		}
 	}
 }
 
