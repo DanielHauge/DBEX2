@@ -14,7 +14,7 @@ The result is a One-line script setup, that be run on a linux machine. It will s
 
 -----------
 
-## TL:DR version:
+## TL:DR version
 Put this command in linux terminal
 ```
 wget -O - https://raw.githubusercontent.com/Games-of-Threads/DBEX2-DFH/master/SetupDBEX2.sh | bash
