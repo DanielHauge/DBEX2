@@ -14,6 +14,15 @@ The result is a One-line script setup, that be run on a linux machine. It will s
 
 -----------
 
+TL:DR version:
+
+```
+wget -O - https://raw.githubusercontent.com/Games-of-Threads/DBEX2-DFH/master/SetupDBEX2.sh | bash
+```
+
+
+---------
+
 ## How to run!
 ### Pre-requisite
 - Have a running debian distribution. (Ubuntu 16 or < is recommended)
