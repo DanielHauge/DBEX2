@@ -90,7 +90,7 @@ func RunCLI(){
 			fmt.Print("\nEnter Command. \nAvailable Commands: \n userscount     mostlinks         mentioned          mostmactive         mostgrumpy      mosthappy      exit\n")
 		}
 		}else {
-			println("Did not recognize the command."
+			println("Did not recognize the command.")
 			fmt.Print("\nEnter Command. \nAvailable Commands: \n userscount     mostlinks         mentioned          mostmactive         mostgrumpy      mosthappy      exit\n")
 		}
 	}
